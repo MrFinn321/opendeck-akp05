@@ -69,7 +69,7 @@ impl Kind {
             },
 
             MSDPRO_VID => match pid {
-                MSDPRO_PID => Some(Kind::MsdPro),
+                MSDPRO_PID => Some(Kind::MSDPro),
                 _ => None,
             },
 
@@ -85,7 +85,7 @@ impl Kind {
             Self::Akp05E => "Ajazz AKP05E",
             Self::N4EN => "Mirabox N4EN",
             Self::N4Pro => "VSDInside N4 Pro",
-            Self::MsdPro => "Mars Gaming MSD-PRO (0B00:1003)",
+            Self::MSDPro => "Mars Gaming MSD-PRO (0B00:1003)",
 
         }
         .to_string()
@@ -97,7 +97,7 @@ impl Kind {
             Self::N4EN => 3,
             Self::Akp05E => 3,
             Self::N4Pro => 3,
-            Self::MsdPro => 3,
+            Self::MSDPro => 3,
 
         }
     }
